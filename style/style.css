@@ -79,6 +79,9 @@ article #SixSort {
   header nav .clear {
     clear: both;
   }
+  header .nav2 {
+    display: none;
+  }
   header #BtnBox1 {
     display: none;
   }
@@ -163,15 +166,18 @@ article #SixSort {
     display: -ms-flexbox;
     display: flex;
   }
+  header nav .null1 {
+    width: 40vw;
+  }
   header nav #nav1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 70vw;
+    width: 40vw;
     list-style-type: none;
   }
   header nav #nav1Search {
-    width: 30vw;
+    width: 20vw;
   }
   header nav .Subnav {
     display: none;
@@ -181,22 +187,21 @@ article #SixSort {
     display: -ms-flexbox;
     display: flex;
   }
-  header .nav2 #BtnBox1 {
-    width: 70vw;
-  }
-  header .nav2 #BtnBox1 ul {
+  header .nav2 #Sort1 {
+    width: 30vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
   }
-  header .nav2 #BtnBox1 ul ul {
+  header .nav2 #Sort1 ul {
     display: none;
   }
-  header .nav2 #BtnBox2 {
-    width: 30vw;
+  header .nav2 .null {
+    width: 20vw;
   }
-  header .nav2 #BtnBox2 ul {
+  header .nav2 #Sort2 {
+    width: 50vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -46,6 +46,9 @@ header {
             @include ClearFloat;
         }
     }
+    .nav2 {
+        @include DN;
+    }
     #BtnBox1 {
         @include DN;
     }

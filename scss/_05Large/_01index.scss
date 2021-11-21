@@ -1,14 +1,17 @@
 header {
     nav {
         display: flex;
-
+        // 撐開的空白
+        .null1 {
+            width: $W10 * 4;
+        }
         #nav1 {
             display: flex;
-            width: $W10 * 7;
+            width: $W10 * 4;
             @include liDN;
         }
         #nav1Search {
-            width: $W10 * 3;
+            width: $W10 * 2;
         }
         .Subnav {
             @include DN;
@@ -16,22 +19,22 @@ header {
     }
     .nav2 {
         display: flex;
-        #BtnBox1 {
-            width: $W10 * 7;
+        #Sort1 {
+            width: $W10 * 3;
+            display: flex;
+            @include liDN;
             ul {
-                display: flex;
-                @include liDN;
-                ul {
-                    @include DN;
-                }
+                @include DN;
             }
         }
-        #BtnBox2 {
-            width: $W10 * 3;
-            ul {
-                display: flex;
-                @include liDN;
-            }
+        // 撐開的空格
+        .null {
+            width: $W10 * 2;
+        }
+        #Sort2 {
+            width: $W10 * 5;
+            display: flex;
+            @include liDN;
         }
     }
     #SearchM {
