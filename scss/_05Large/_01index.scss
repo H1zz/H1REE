@@ -14,15 +14,25 @@ header {
             @include DN;
         }
     }
-    #BtnBox1 {
+    .nav2 {
         display: flex;
-        width: $W10 * 7;
-        @include liDN;
-    }
-    #BtnBox2 {
-        display: flex;
-        width: $W10 * 3;
-        @include liDN;
+        #BtnBox1 {
+            width: $W10 * 7;
+            ul {
+                display: flex;
+                @include liDN;
+                ul {
+                    @include DN;
+                }
+            }
+        }
+        #BtnBox2 {
+            width: $W10 * 3;
+            ul {
+                display: flex;
+                @include liDN;
+            }
+        }
     }
     #SearchM {
         @include DN;

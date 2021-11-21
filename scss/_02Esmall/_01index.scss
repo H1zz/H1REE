@@ -6,6 +6,7 @@
 header {
     // 寬度 100%
     background-color: rgb(209, 233, 104);
+    width: $W10 * 10;
     nav {
         /*
     浮動對齊的問題 float
@@ -16,55 +17,40 @@ header {
     2. 清除浮動狀態，由nav設定
     */
         background-color: rgb(248, 240, 255);
-        // width: $W10 * 10;
-        height: 15vw;
-        position: relative;
-        // 靠左排列(與fav同行)
-        #Logo {
-            // width: $W10 * 8+5%;
-            @include LFW(8, 5%);
-            background-color: white;
-            #AnnLogo {
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                @include LFW(1, 5%);
-            }
-        }
-        // 靠左排列(與Logo同行)
-        #fav {
-            // width: $W10 * 1+5%;
-            @include LFW(1, 5%);
-            background-color: white;
-            #favimg {
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                @include LFW(1, 5%);
-            }
-        }
+        width: $W10 * 10;
         #nav1 {
             @include DN;
         }
+        #nav1Search {
+            @include DN;
+        }
         .Subnav {
-            background-color: red;
             @include DB;
+            width: $W10 * 10;
+            @include LFW(7, 5vw);
+            #Logo {
+                float: left;
+                background-color: white;
+            }
+            #fav {
+                float: left;
+                // background-color: white;
+            }
         }
         #BtnBox1 {
             .WomenSort {
                 @include DN;
             }
         }
-
-        #BtnBox1 {
-            @include DN;
-        }
-        #BtnBox2 {
-            @include DN;
-        }
         .clear {
             @include ClearFloat;
         }
+    }
+    #BtnBox1 {
+        @include DN;
+    }
+    #BtnBox2 {
+        @include DN;
     }
     div {
         #SearchM {

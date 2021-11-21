@@ -36,6 +36,7 @@ article #SixSort {
 @media screen and (max-width: 576px) {
   header {
     background-color: #d1e968;
+    width: 100vw;
   }
   header nav {
     /*
@@ -47,43 +48,42 @@ article #SixSort {
     2. 清除浮動狀態，由nav設定
     */
     background-color: #f8f0ff;
-    height: 15vw;
-    position: relative;
-  }
-  header nav #Logo {
-    background-color: white;
-  }
-  header nav #Logo #AnnLogo {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-  header nav #fav {
-    background-color: white;
-  }
-  header nav #fav #favimg {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    width: 100vw;
   }
   header nav #nav1 {
     display: none;
   }
+  header nav #nav1Search {
+    display: none;
+  }
   header nav .Subnav {
-    background-color: red;
     display: block;
+    width: 100vw;
+  }
+  header nav .Subnav #Logo {
+    width: 75vw;
+  }
+  header nav .Subnav #fav {
+    width: 25vw;
+  }
+  header nav .Subnav #Logo {
+    float: left;
+    background-color: white;
+  }
+  header nav .Subnav #fav {
+    float: left;
   }
   header nav #BtnBox1 .WomenSort {
     display: none;
   }
-  header nav #BtnBox1 {
-    display: none;
-  }
-  header nav #BtnBox2 {
-    display: none;
-  }
   header nav .clear {
     clear: both;
+  }
+  header #BtnBox1 {
+    display: none;
+  }
+  header #BtnBox2 {
+    display: none;
   }
   header div #SearchM {
     display: block;
@@ -101,17 +101,47 @@ article #SixSort {
     float: left;
     position: center;
   }
+  #Navbar #menuM #Logo {
+    width: 20vw;
+  }
+  #Navbar #menuM #fav {
+    width: 80vw;
+  }
   #Navbar #homeM {
     float: left;
+  }
+  #Navbar #homeM #Logo {
+    width: 20vw;
+  }
+  #Navbar #homeM #fav {
+    width: 80vw;
   }
   #Navbar #mailM {
     float: left;
   }
+  #Navbar #mailM #Logo {
+    width: 20vw;
+  }
+  #Navbar #mailM #fav {
+    width: 80vw;
+  }
   #Navbar #cartM {
     float: left;
   }
+  #Navbar #cartM #Logo {
+    width: 20vw;
+  }
+  #Navbar #cartM #fav {
+    width: 80vw;
+  }
   #Navbar #memberM {
     float: left;
+  }
+  #Navbar #memberM #Logo {
+    width: 20vw;
+  }
+  #Navbar #memberM #fav {
+    width: 80vw;
   }
   article #BtnBox3 {
     display: none;
@@ -146,18 +176,30 @@ article #SixSort {
   header nav .Subnav {
     display: none;
   }
-  header #BtnBox1 {
+  header .nav2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  header .nav2 #BtnBox1 {
     width: 70vw;
+  }
+  header .nav2 #BtnBox1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style-type: none;
   }
-  header #BtnBox2 {
+  header .nav2 #BtnBox1 ul ul {
+    display: none;
+  }
+  header .nav2 #BtnBox2 {
+    width: 30vw;
+  }
+  header .nav2 #BtnBox2 ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 30vw;
     list-style-type: none;
   }
   header #SearchM {
