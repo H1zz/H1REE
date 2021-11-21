@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- 網頁語系 繁體中文 -->
+<html lang="zh-tw">
+    <!-- head 瀏覽器專用 meta (文件相關資訊 響應式標籤 作者 關鍵字 文字編輯方式) -->
+<head>
+    <!-- 文字編碼方式 萬國碼 -->
+    <meta charset="UTF-8">
+    <!-- 伺服器屬性 內容:IE 瀏覽器 = edge 瀏覽器(相容性) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 響應式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 外部樣式連結 -->
+        <link rel="stylesheet" href="dist/style/style.min.css">
+    <!-- 網頁標題 (唯一標籤) -->
+    <title>購物車</title>
+</head>
+<!-- 設定頁面背景顏色 行內語法 (標籤樣式) -->
+<body>
+    <header>
+        <nav>
+        <!-- 導覽列標籤nav 項目ul 清單li，商標 標題1(h1) -->
+        <!-- icon 區塊標籤div id:icon -->
+        <ul id="nav1" style="background-color: blanchedalmond;">
+            <li class="SignUp">註冊</li>
+            <li class="LogIn">登入</li>
+            <li class="Member">帳戶</li>
+            <li class="Favorite">最愛</li>
+            <li class="Cart">購物車</li>
+            <li class="Mail">站內信</li>
+            <li class="Service">客服</li>            
+        </ul>
+        <input id="nav1Search" type="搜尋" placeholder="請輸入商品名稱" style="text-align: center;">
+        <ul class="Subnav">
+            <h1 id="Logo">
+                <img id="AnnLogo" src="img/logo.svg" alt="Logo">
+            </h1>  
+            <!-- 手機板最愛 -->
+            <div id="fav">
+                <img id="favimg" src="img/favorite.svg" alt="最愛">
+            </div>
+            <p class="Clear"></p>
+        </ul>
+        </nav>
+        <div id="BtnBox1">
+            <ul>    
+                <li class="Logo">UNIQLO</li>           
+                <li class="Women">WOMEN</li>
+                <ul class="WomenSort">
+                    <li>上衣類</li>
+                    <li>下身類</li>
+                </ul>
+                <li class="Men">MEN</li>
+                <ul class="MenSort">
+                    <li>上衣類</li>
+                    <li>下身類</li>
+                </ul>
+                <li class="Kids">KIDS</li>
+                <ul class="KidsSort">
+                    <li>上衣類</li>
+                    <li>下身類</li>
+                </ul>
+                <li class="Baby">BABY</li>
+                <ul class="BabySort">
+                    <li>上衣類</li>
+                    <ul>
+                        <li>1</li>
+                    </ul>
+                    <li>下身類</li>
+                </ul>
+            </ul>
+         </div>
+         <div id="BtnBox2">
+             <ul>
+                 <li class="Info">企業資訊</li>
+                 <li class="Colletion">會員募集中</li>
+                 <li class="QA">常見問題</li>
+                 <li class="Location">店鋪資訊</li>
+                 <li class="Subscrib">訂閱電子報</li>
+             </ul>
+         </div>
+             <!-- 手機板選單 固定在下方 -->
+        <div id="Navbar" style="background-color: red;">
+            <img id="menuM" src="img/menu.svg" alt="主選單">
+            <img id="homeM" src="img/home.svg" alt="首頁">
+            <img id="mailM" src="img/mail.svg" alt="站內信">
+            <img id="cartM" src="img/cart.svg" alt="購物車">
+            <img id="memberM" src="img/member.svg" alt="我的帳戶">
+        </div>
+        <!-- 手機板搜尋 -->
+        <div>            
+            <input id="SearchM" type="搜尋" placeholder="請輸入商品名稱" style="text-align: left;">  
+        </div>
+    </header>
+
+    <article>
+        <!-- 網頁內容 隨著頁面內容而更動，首頁廣告輪播區 -->
+        <div id="Banner">
+            <div class="LeftBtn">按鈕</div>
+            <ul class="ImgBox">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <div class="RightBtn">按鈕</div>
+        </div>
+        <!-- 大分類 -->
+        <div id="BtnBox3">
+            <article>
+                <h1>週週新話題</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+            
+            <article>
+                <h1>超優惠專區</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+    
+            <article>
+                <h1>期間限定專區</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+    
+            <article>
+                <h1>設計師聯名系列</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+    
+            <article>
+                <h1>較小-較大尺碼</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+        </div>
+
+        <!-- 手機板 四大分類 -->
+        <div id="AllSort">
+            <span>WOMEN</span>
+            <span>MEN</span>
+            <span>KIDS</span>
+            <span>BABY</span>
+        </div>
+
+        <!-- 手機板 六分類 -->
+        <div id="SixSort">
+            <div id="one">
+                <span>週週話題新品</span>
+                <span>期間限定優惠</span>
+            </div>
+            <div id="two">
+                <span>超值精選</span>
+                <span>較小-較大尺碼</span>
+            </div>
+            <div id="three">
+                <span>網路/超大型店獨家</span>
+                <span>TOP10熱銷榜單</span>
+            </div>
+        </div>
+
+        <section>
+            <p class="images">商品圖</p>
+            <p>
+                <h3>商品名稱</h3>
+                <ul>
+                    <li>我的最愛</li>
+                    <li>購物車</li>
+                </ul>
+            </p>            
+            <p>商品簡介，字數超過26個字時(<mark>英文與阿拉伯數字為26個字，中文為13個字</mark>)，會利用......設計</p>
+            <!-- span行內範圍 s刪除線 -->
+            <ul>
+                <li>原價<span><s>1000</s></span>元</li>
+                <li>特價<span>800</span>元</li>
+            </ul>
+        </section>
+    </article>
+
+    <footer>
+        <!-- 傭有者資訊 建議瀏覽器解析度 瀏覽人數(比較少用，資料庫運作) 版權聲明 鏈結:隱私權政策 網頁安全政策 服務條款 商品的次選單 -->
+        <!-- 段落標籤 -->
+        <p>Copyright &copy; <span id="Year">2021</span> UNIQLO Co.,Ltd All rights reserved</p>
+        <address>
+            <p>台灣</p>
+            <p>0800-000123</p>
+            <p>FB</p>
+            <p>IG</p>
+        </address>
+    </footer>
+</body>
+</html>

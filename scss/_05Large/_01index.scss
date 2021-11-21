@@ -1,0 +1,44 @@
+header {
+    nav {
+        display: flex;
+
+        #nav1 {
+            display: flex;
+            width: $W10 * 7;
+            @include liDN;
+        }
+        #nav1Search {
+            width: $W10 * 3;
+        }
+        .Subnav {
+            @include DN;
+        }
+    }
+    #BtnBox1 {
+        display: flex;
+        width: $W10 * 7;
+        @include liDN;
+    }
+    #BtnBox2 {
+        display: flex;
+        width: $W10 * 3;
+        @include liDN;
+    }
+    #SearchM {
+        @include DN;
+    }
+    #Navbar {
+        @include DN;
+    }
+}
+article {
+    #Banner {
+        background-color: springgreen;
+    }
+    #AllSort {
+        @include DN;
+    }
+    #SixSort {
+        @include DN;
+    }
+}
