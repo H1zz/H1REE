@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- 網頁語系 繁體中文 -->
-<html lang="zh-tw">
-    <!-- head 瀏覽器專用 meta (文件相關資訊 響應式標籤 作者 關鍵字 文字編輯方式) -->
+<html lang="en">
 <head>
     <!-- 文字編碼方式 萬國碼 -->
     <meta charset="UTF-8">
@@ -9,42 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- 響應式 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- 外部樣式連結 -->
-        <link rel="stylesheet" href="dist/style/style.min.css">
+    <!-- 外部樣式連結 -->
+    <link rel="stylesheet" href="dist/style/style.min.css">
     <!-- 網頁標題 (唯一標籤) -->
     <title>購物車</title>
 </head>
-<!-- 設定頁面背景顏色 行內語法 (標籤樣式) -->
 <body>
     <header>
-        <nav>
-        <!-- 導覽列標籤nav 項目ul 清單li，商標 標題1(h1) -->
-        <!-- icon 區塊標籤div id:icon -->
-        <!-- 撐開的空白 -->
-        <p class="null1"></p>
-        <ul id="nav1" style="background-color: blanchedalmond;">
-            <li class="SignUp">註冊</li>
-            <li class="LogIn">登入</li>
-            <li class="Member">帳戶</li>
-            <li class="Favorite">最愛</li>
-            <li class="Cart">購物車</li>
-            <li class="Mail">站內信</li>
-            <li class="Service">客服</li>            
-        </ul>
-        <input id="nav1Search" type="搜尋" placeholder="請輸入商品名稱" style="text-align: center;">
-        <!-- 手機板LOGO+FAV -->
-        <ul class="Subnav">
-            <div id="Logo">
-                <h1>UNIQLO</h1>
-                <!-- <img id="AnnLogo" src="img/logo.svg" alt="Logo"> -->
-            </div>  
-            <!-- 手機板最愛 -->
-            <div id="fav">
-                <!-- fav -->
-                <img id="favimg" src="img/favorite.svg" alt="最愛">
-            </div>
-        </ul>
-        </nav>
+        <!-- 第一層導覽 -->
+        <div class="nav1">
+            <!-- 撐開的空白 -->
+            <p class="null1"></p>
+            <!-- 導覽 -->
+            <ul id="nav1nav">
+                <li class="SignUp">註冊</li>
+                <li class="LogIn">登入</li>
+                <li class="Member">我的帳戶</li>
+                <li class="Favorite">我的最愛</li>
+                <li class="Cart">購物車</li>
+                <li class="Mail">站內信</li>
+                <li class="Service">聯絡客服</li>          
+            </ul>
+            <input id="nav1Search" type="搜尋" placeholder="請輸入商品名稱" style="text-align: left;">
+        </div>
+        <!-- 第二層導覽 -->
         <div class="nav2">
             <ul id="Sort1">    
                 <li class="Logo">UNIQLO</li>           
@@ -74,28 +60,43 @@
             </ul>
             <!-- 撐開的空白null -->
             <p class="null"></p>
-            <ul id="Sort2">
+            <!-- 導覽 -->
+            <ul id="nav2nav">
                 <li class="Info">企業資訊</li>
-                <li class="Colletion">會員募集中</li>
+                <li class="Collection">會員募集中</li>
                 <li class="QA">常見問題</li>
                 <li class="Location">店鋪資訊</li>
                 <li class="Subscrib">訂閱電子報</li>
             </ul>
-        </div>        
-             <!-- 手機板選單 固定在下方 -->
-        <div id="Navbar" style="background-color: red;">
+        </div>   
+        <!-- 手機板LOGO+FAV -->
+        <div class="Mnav1">
+            <div id="Logo">
+                <!-- <h1>UNIQLO</h1> -->
+                <img id="AnnLogo" src="img/logo.svg" alt="Logo">
+            </div>  
+            <!-- 手機板最愛 -->
+            <div id="fav">
+                <img id="favimg" src="img/favorite.svg" alt="最愛">
+            </div>
+        </div>
+        <!-- 支撐LOGO+FAV -->
+        <div class="Mnav1Sup">            
+        </div>
+        <!-- 手機板搜尋 -->
+        <div class="SearchM">            
+            <input id="SearchM" type="搜尋" placeholder="請輸入商品名稱M" style="text-align: center;">  
+        </div>
+        <!-- 手機板導覽 -->
+        <div id="Navbar">
             <img id="menuM" src="img/menu.svg" alt="主選單">
             <img id="homeM" src="img/home.svg" alt="首頁">
             <img id="mailM" src="img/mail.svg" alt="站內信">
             <img id="cartM" src="img/cart.svg" alt="購物車">
             <img id="memberM" src="img/member.svg" alt="我的帳戶">
-        </div>
-        <!-- 手機板搜尋 -->
-        <div>            
-            <input id="SearchM" type="搜尋" placeholder="請輸入商品名稱" style="text-align: left;">  
-        </div>
+        </div>             
     </header>
-
+    
     <article>
         <!-- 網頁內容 隨著頁面內容而更動，首頁廣告輪播區 -->
         <div id="Banner">
@@ -109,8 +110,8 @@
             </ul>
             <div class="RightBtn">按鈕</div>
         </div>
-        <!-- 大分類 -->
-        <div id="BtnBox3">
+        <!-- 四大分類 -->
+        <div id="FourSort">
             <article>
                 <h1>週週新話題</h1>
                 <li>WOMEN</li>
@@ -153,26 +154,26 @@
         </div>
 
         <!-- 手機板 四大分類 -->
-        <div id="AllSort">
-            <span>WOMEN</span>
-            <span>MEN</span>
-            <span>KIDS</span>
-            <span>BABY</span>
+        <div id="MFourSort">
+            <div>WOMEN</div>
+            <div>MEN</div>
+            <div>KIDS</div>
+            <div>BABY</div>
         </div>
 
         <!-- 手機板 六分類 -->
-        <div id="SixSort">
+        <div id="MSixSort">
             <div id="one">
-                <span>週週話題新品</span>
-                <span>期間限定優惠</span>
+                <div>週週話題新品</div>
+                <div>期間限定優惠</div>
             </div>
             <div id="two">
-                <span>超值精選</span>
-                <span>較小-較大尺碼</span>
+                <div>超值精選</div>
+                <div>較小-較大尺碼</div>
             </div>
             <div id="three">
-                <span>網路/超大型店獨家</span>
-                <span>TOP10熱銷榜單</span>
+                <div>網路/超大型店獨家</div>
+                <div>TOP10熱銷榜單</div>
             </div>
         </div>
 
@@ -204,6 +205,9 @@
             <p>FB</p>
             <p>IG</p>
         </address>
-    </footer>
+        <!-- 避免被手機板導覽列遮住的空白 -->
+        <div class="Blank">
+        </div>
+    </footer>    
 </body>
 </html>
