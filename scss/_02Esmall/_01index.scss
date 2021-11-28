@@ -80,9 +80,6 @@ header {
   }
 }
 article {
-  #Banner {
-    background-color: aqua;
-  }
   #FourSort {
     @include DN;
   }
@@ -107,5 +104,11 @@ article {
       display: flex;
       height: $W10 * 1.5;
     }
+  }
+}
+footer {
+  .Blank {
+    width: 100%;
+    height: $W10 * 1.5;
   }
 }

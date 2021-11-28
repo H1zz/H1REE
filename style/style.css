@@ -110,9 +110,6 @@ img {
   header #Navbar #memberM #fav {
     width: 80vw;
   }
-  article #Banner {
-    background-color: aqua;
-  }
   article #FourSort {
     display: none;
   }
@@ -146,8 +143,42 @@ img {
     display: flex;
     height: 15vw;
   }
+  footer .Blank {
+    width: 100%;
+    height: 15vw;
+  }
   #Main {
-    background-color: #f78800;
+    background-color: #4f0052;
+  }
+  #Main #Banner {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main #Banner .LeftBtn,
+  #Main #Banner .RightBtn {
+    display: none;
+  }
+  #Main #Banner #ImgBox {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 40vh;
+    background-color: #d98ffc;
+  }
+  #Main #Banner #ImgBox li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 40vh;
+  }
+  #Main #Banner #ImgBox .Item01 {
+    width: 100vw;
+    background-image: url(../../img/banner/005.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
