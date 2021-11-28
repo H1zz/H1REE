@@ -152,11 +152,9 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     width: 100%;
     height: 15vw;
   }
-  #Main {
-    background-color: #4f0052;
-  }
   #Main #Banner {
     width: 100vw;
+    overflow: hidden;
     position: relative;
   }
   #Main #Banner .Btn {
@@ -182,7 +180,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     width: 100vw;
     list-style-type: none;
     padding-bottom: 40vh;
-    background-color: #d98ffc;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -198,6 +195,9 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  #Main #Banner #ImgBox #blank {
+    height: 10vh;
   }
 }
 
