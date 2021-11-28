@@ -9,6 +9,10 @@ img {
   height: auto;
 }
 
+/*
+文字尺寸 單位 px (固定值) em(百分比，會疊加父框架設定的值) rem(百分比，不會疊加父框架的值)
+em 基礎為 1em=16px ; rem 基礎為 1rem=16px
+*/
 @media screen and (max-width: 576px) {
   header .nav1 {
     display: none;
@@ -52,6 +56,7 @@ img {
   }
   header #Navbar {
     display: block;
+    z-index: 10;
     background-color: #ffd9f9;
     position: fixed;
     bottom: 0px;
@@ -154,9 +159,24 @@ img {
     width: 100vw;
     position: relative;
   }
-  #Main #Banner .LeftBtn,
+  #Main #Banner .Btn {
+    color: white;
+    width: 30px;
+    height: 12vh;
+    text-align: center;
+    line-height: 12vh;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 5;
+    top: 19vh;
+  }
+  #Main #Banner .LeftBtn {
+    left: 2.5vw;
+    background-color: black;
+  }
   #Main #Banner .RightBtn {
-    display: none;
+    right: 2.5vw;
+    background-color: blue;
   }
   #Main #Banner #ImgBox {
     width: 100vw;

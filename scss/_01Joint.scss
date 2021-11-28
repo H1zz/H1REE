@@ -20,6 +20,12 @@ $W10: 10vw;
   display: none;
 }
 
+/*
+文字尺寸 單位 px (固定值) em(百分比，會疊加父框架設定的值) rem(百分比，不會疊加父框架的值)
+em 基礎為 1em=16px ; rem 基礎為 1rem=16px
+*/
+$Trem : 1rem;
+
 @mixin DB {
   display: block;
 }
