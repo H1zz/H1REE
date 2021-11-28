@@ -146,6 +146,9 @@ img {
     display: flex;
     height: 15vw;
   }
+  #Main {
+    background-color: #f78800;
+  }
 }
 
 @media screen and (min-width: 576px) {
