@@ -3,7 +3,7 @@
     #Banner{
         width: $W10*10;
         // 溢位設定，將超出的可視範圍隱藏
-        overflow: hidden;
+        // overflow:    hidden;
         // 定位點:相對定位
         position: relative;
         .LeftBtn,
