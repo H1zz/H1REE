@@ -179,7 +179,8 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 40vh;
+    padding-bottom: 27vh;
+    background-color: #d98ffc;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -196,8 +197,33 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-position: center;
     background-size: cover;
   }
-  #Main #Banner #ImgBox #blank {
-    height: 10vh;
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main #Banner #ImgBox .Item03 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main #Banner #ImgBox .Item04 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main #Banner #ImgBox .Item05 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/001.jpg);
   }
 }
 
