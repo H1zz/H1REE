@@ -31,10 +31,13 @@
       right: 2.5vw;
     }
     #ImgBox {
+      $ImgPadding:355px;
+      // 父框架的padding 355px - 子框架的padding 350px = 相差值 $Differ
+      $Differ:5px;
       width: $W10 * 10;
       @include liDN;
       // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh
-      padding-bottom: 350px;
+      padding-bottom: $ImgPadding;
       background-color: rgb(217, 143, 252);
       li {
         width: $W10 * 10;
@@ -49,7 +52,8 @@
         text-align: center;
         // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh(會隨著裝置高度而改變)
         // 使用px來固定高度
-        padding-bottom: 350px;
+        // 子框架的padding=父框架的padding - 相差值$Differ
+        padding-bottom: $ImgPadding - $Differ;
       }
       .Item01 {
         width: $W10 * 10;
