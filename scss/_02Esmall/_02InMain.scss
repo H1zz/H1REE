@@ -6,6 +6,10 @@
     overflow: hidden;
     // 定位點:相對定位
     position: relative;
+    
+    $ImgPadding:355px;
+    // 父框架的padding 355px - 子框架的padding 350px = 相差值 $Differ
+    $Differ:5px;
     .Btn {
       color: white;
       width: 20px;
@@ -19,7 +23,7 @@
       position: absolute;
       // 移動階層(圖層)
       z-index: 5;
-      top: 350/2-50+px;
+      top: ($ImgPadding - $Differ)/2-50;
       background-color: rgba(255,255,255,0.25);
       @include Rounded(15);
     }
@@ -31,9 +35,6 @@
       right: 2.5vw;
     }
     #ImgBox {
-      $ImgPadding:355px;
-      // 父框架的padding 355px - 子框架的padding 350px = 相差值 $Differ
-      $Differ:5px;
       width: $W10 * 10;
       @include liDN;
       // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh
