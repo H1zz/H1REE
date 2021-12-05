@@ -9,17 +9,17 @@
     .Btn {
       color: white;
       width: 20px;
-      height: 6vh * 2;
+      height: 50px * 2;
       // 水平置中
       text-align: center;
       // 垂直置中 高度=行距
-      line-height: 6vh * 2;
+      line-height: 50px * 2;
       font-size: $Trem * 1.2;
       // 定位點
       position: absolute;
       // 移動階層(圖層)
       z-index: 5;
-      top: 25vh-6vh;
+      top: 350/2-50+px;
       background-color: rgba(255,255,255,0.25);
       @include Rounded(15);
     }
@@ -34,7 +34,7 @@
       width: $W10 * 10;
       @include liDN;
       // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh
-      padding-bottom: 23vh;
+      padding-bottom: 350px;
       background-color: rgb(217, 143, 252);
       li {
         width: $W10 * 10;
@@ -47,8 +47,9 @@
         // margin-left:-257px ;
         font-size: 72px;
         text-align: center;
-        // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh
-        padding-bottom: 40vh;
+        // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh(會隨著裝置高度而改變)
+        // 使用px來固定高度
+        padding-bottom: 350px;
       }
       .Item01 {
         width: $W10 * 10;
@@ -73,7 +74,7 @@
         @include BGPhoto(center,cover,Banner,"002.jpg")
       }
       .Item05{
-        @include BGPhoto(center,cover,Banner,"001.jpg")
+        @include BGPhoto(center,cover,Banner,"005.jpg")
       }
     }
   }
