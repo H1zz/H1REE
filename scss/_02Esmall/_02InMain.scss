@@ -8,27 +8,27 @@
     position: relative;
     .Btn {
       color: white;
-      width: 30px;
+      width: 20px;
       height: 6vh * 2;
       // 水平置中
       text-align: center;
       // 垂直置中 高度=行距
       line-height: 6vh * 2;
-      font-size: $Trem * 2;
+      font-size: $Trem * 1.2;
       // 定位點
       position: absolute;
       // 移動階層(圖層)
       z-index: 5;
       top: 25vh-6vh;
+      background-color: rgba(255,255,255,0.25);
+      @include Rounded(15);
     }
     .LeftBtn {
       left: 2.5vw;
-      background-color: black;
     }
     .RightBtn {
       // 方向 右邊為0(物件靠又對齊);float 浮點對齊，配合 上下左右 方向推動
       right: 2.5vw;
-      background-color: blue;
     }
     #ImgBox {
       width: $W10 * 10;
@@ -74,9 +74,6 @@
       }
       .Item05{
         @include BGPhoto(center,cover,Banner,"001.jpg")
-      }
-      #blank {
-        // height:10vh;
       }
     }
   }
