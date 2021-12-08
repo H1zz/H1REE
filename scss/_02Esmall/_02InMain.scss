@@ -6,26 +6,25 @@
     overflow: hidden;
     // 定位點:相對定位
     position: relative;
-    
-    $ImgPadding:355px;
+
+    $ImgPadding: 355px;
     // 父框架的padding 355px - 子框架的padding 350px = 相差值 $Differ
-    $Differ:5px;
+    $Differ: 5px;
     .Btn {
       color: white;
-      width: 20px;
-      height: 50px * 2;
+      width: 25px * 2;
       // 水平置中
       text-align: center;
       // 垂直置中 高度=行距
-      line-height: 50px * 2;
+      line-height: 25px * 2;
       font-size: $Trem * 1.2;
       // 定位點
       position: absolute;
       // 移動階層(圖層)
       z-index: 5;
-      top: ($ImgPadding - $Differ)/2-50;
-      background-color: rgba(255,255,255,0.25);
-      @include Rounded(15);
+      top: ($ImgPadding - $Differ)/2-25;
+      background-color: rgba(255, 255, 255, 0.25);
+      @include Rounded(50);
     }
     .LeftBtn {
       left: 2.5vw;
@@ -68,18 +67,18 @@
         background-size: cover;
       }
       // 以下BANNER圖使用函數帶入
-      .Item02{
+      .Item02 {
         // 英文字在數字前，數字會被判定為"文字";數字在英文字或底線( _ )前，數字被判定為數字，"0"為開頭，scss會自動刪除
-        @include BGPhoto(center,cover,Banner,"004.jpg")
+        @include BGPhoto(center, cover, Banner, '004.jpg');
       }
-      .Item03{
-        @include BGPhoto(center,cover,Banner,"003.jpg")
+      .Item03 {
+        @include BGPhoto(center, cover, Banner, '003.jpg');
       }
-      .Item04{
-        @include BGPhoto(center,cover,Banner,"002.jpg")
+      .Item04 {
+        @include BGPhoto(center, cover, Banner, '002.jpg');
       }
-      .Item05{
-        @include BGPhoto(center,cover,Banner,"005.jpg")
+      .Item05 {
+        @include BGPhoto(center, cover, Banner, '005.jpg');
       }
     }
   }

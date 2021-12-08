@@ -48,7 +48,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     height: 15vw;
   }
   header .SearchM {
-    margin: 10px 20px 10px 20px;
+    margin: 15px 20px 10px 20px;
   }
   header .SearchM #SearchM {
     width: 100%;
@@ -57,7 +57,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   header #Navbar {
     display: block;
     z-index: 10;
-    background-color: #ffd9f9;
+    background-color: #f09293;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -121,7 +121,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   article #MFourSort {
     display: block;
     background-color: grey;
-    height: 15vw;
+    line-height: 15vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -134,19 +134,19 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 15vw;
+    line-height: 15vw;
   }
   article #MSixSort #two {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 15vw;
+    line-height: 15vw;
   }
   article #MSixSort #three {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 15vw;
+    line-height: 15vw;
   }
   footer .Blank {
     width: 100%;
@@ -159,16 +159,15 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   }
   #Main #Banner .Btn {
     color: white;
-    width: 20px;
-    height: 100px;
+    width: 50px;
     text-align: center;
-    line-height: 100px;
+    line-height: 50px;
     font-size: 1.2rem;
     position: absolute;
     z-index: 5;
-    top: 125px;
+    top: 150px;
     background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 15px;
+    border-radius: 50px;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;

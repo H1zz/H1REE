@@ -24,7 +24,7 @@ $W10: 10vw;
 文字尺寸 單位 px (固定值) em(百分比，會疊加父框架設定的值) rem(百分比，不會疊加父框架的值)
 em 基礎為 1em=16px ; rem 基礎為 1rem=16px
 */
-$Trem : 1rem;
+$Trem: 1rem;
 
 @mixin DB {
   display: block;
@@ -53,7 +53,7 @@ $Trem : 1rem;
 @mixin liDN {
   list-style-type: none;
 }
-@mixin BGPhoto($Postion,$Size,$Folder,$Image){
+@mixin BGPhoto($Postion, $Size, $Folder, $Image) {
   // 變數設定1.對齊 $Postion 2.尺寸 $Size 3.資料夾位置 $Folder 4.圖片 $Image
   // 問題:路徑無法直接讀取變數名稱
   // 解答:scss提供的語法，插值寫法(基於javascript的es6語法)，#{自訂名稱(只能英數)}，例如:#{$Image}，寫在路徑上
@@ -70,5 +70,5 @@ $Trem : 1rem;
 // 圓角矩形
 @mixin Rounded($Num) {
   // 邊框角度設定，建議單位為像素
-  border-radius: $Num+px;
+  border-radius: $Num + px;
 }
