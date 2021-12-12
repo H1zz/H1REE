@@ -7,7 +7,7 @@
     // 定位點:相對定位
     position: relative;
 
-    $ImgPadding: 355px;
+    $ImgPadding: 550px;
     // 父框架的padding 355px - 子框架的padding 350px = 相差值 $Differ
     $Differ: 5px;
     .Btn {
@@ -23,7 +23,7 @@
       // 移動階層(圖層)
       z-index: 5;
       top: ($ImgPadding - $Differ)/2-25;
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: rgba(255, 255, 255, 0.5);
       @include Rounded(50);
     }
     .LeftBtn {

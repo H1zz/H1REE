@@ -115,6 +115,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   header #Navbar #memberM #fav {
     width: 80vw;
   }
+
   article #FourSort {
     display: none;
   }
@@ -148,10 +149,12 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     display: flex;
     line-height: 15vw;
   }
+
   footer .Blank {
     width: 100%;
     height: 15vw;
   }
+
   #Main #Banner {
     width: 100vw;
     overflow: hidden;
@@ -165,8 +168,8 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     font-size: 1.2rem;
     position: absolute;
     z-index: 5;
-    top: 150px;
-    background-color: rgba(255, 255, 255, 0.25);
+    top: 247.5px;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50px;
   }
   #Main #Banner .LeftBtn {
@@ -178,7 +181,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 355px;
+    padding-bottom: 550px;
     background-color: #d98ffc;
   }
   #Main #Banner #ImgBox li {
@@ -187,7 +190,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 350px;
+    padding-bottom: 545px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -225,7 +228,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-image: url(../../img/Banner/005.jpg);
   }
 }
-
 @media screen and (min-width: 576px) {
   header .nav1 {
     display: none;
@@ -328,6 +330,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   header #Navbar #memberM #fav {
     width: 80vw;
   }
+
   article #Banner {
     background-color: aqua;
   }
@@ -364,10 +367,12 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     display: flex;
     height: 15vw;
   }
+
   footer .Blank {
     width: 100%;
     height: 15vw;
   }
+
   #Main #Banner {
     width: 100vw;
     overflow: hidden;
@@ -442,7 +447,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-image: url(../../img/Banner/005.jpg);
   }
 }
-
 @media screen and (min-width: 768px) {
   header .Mnav1 {
     display: block;
@@ -467,6 +471,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     width: 15vw;
     float: right;
   }
+
   #Main #Banner {
     width: 100vw;
     overflow: hidden;
@@ -541,7 +546,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-image: url(../../img/Banner/005.jpg);
   }
 }
-
 @media screen and (min-width: 992px) {
   header .nav1 {
     display: -webkit-box;
@@ -632,6 +636,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   header #Navbar {
     display: none;
   }
+
   article #Banner {
     background-color: springgreen;
   }
@@ -642,13 +647,11 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     display: none;
   }
 }
-
 @media screen and (min-width: 1200px) {
   article #Banner {
     background-color: #ff9100;
   }
 }
-
 @media screen and (min-width: 1400px) {
   article #Banner {
     background-color: #0077ff;
