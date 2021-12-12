@@ -38,7 +38,7 @@
       @include liDN;
       // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh
       padding-bottom: $ImgPadding;
-      background-color: rgb(217, 143, 252);
+      background-color: rgb(255, 81, 0);
       li {
         width: $W10 * 10;
         float: left;
@@ -86,10 +86,12 @@
     padding-top: 15px;
   }
   >.AllItems{
-    background-color: yellow;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 4px 0px ;
+    background-color: hotpink;
     >.Item{
       background-color: white;
       width: 50%;
@@ -99,10 +101,10 @@
         display: flex;
         @include liDN;
         >#sort1{
-          flex: 7;
+          flex: 6;
         }
         >#size1{
-          flex: 3;
+          flex: 4;
         }               
       }
       >.script2{
@@ -122,4 +124,243 @@
       }
     }
   }
+  
+  .script2{
+    background-color: white;
+    padding: 20px;
+  }
+  .Banner2 {
+    width: $W10 * 10;
+    overflow: hidden;
+    position: relative;
+    $ImgPadding: 350px;
+    $Differ: 5px;
+    .btnmore{
+      box-shadow: 0px 0px 5px 0px;
+      margin-bottom: 20px;
+      display: flex;
+      @include liDN;
+      .blank1{
+        flex: 1;
+        background-color: white;
+      }
+      .more{
+        flex: 8;
+        line-height: 60px;
+        background-color: white;
+        text-align: center;
+        border: 1px black solid;
+      }
+      .blank2{    
+        flex: 1;  
+        background-color: white;
+      }
+    }
+    .Btn {
+      color: white;
+      width: 25px * 2;
+      text-align: center;
+      line-height: 25px * 2;
+      font-size: $Trem * 1.2;
+      position: absolute;
+      z-index: 5;
+      top: ($ImgPadding - $Differ)/2-25;
+      background-color: rgba(255, 255, 255, 0.5);
+      @include Rounded(50);
+    }
+    .LeftBtn {
+      left: 2.5vw;
+    }
+    .RightBtn {
+      right: 2.5vw;
+    }
+    #ImgBox2 {
+      width: $W10 * 10;
+      @include liDN;
+      padding-bottom: $ImgPadding;
+      background-color: rgb(217, 143, 252);
+      li {
+        width: $W10 * 10;
+        float: left;
+        position: absolute;
+        font-size: 72px;
+        text-align: center;
+        padding-bottom: $ImgPadding - $Differ;
+      }
+      .Item006 {
+        @include BGPhoto(center, cover, Banner, '005.jpg');
+      }
+      .Item007 {
+        @include BGPhoto(center, cover, Banner, '004.jpg');
+      }
+      .Item008 {
+        @include BGPhoto(center, cover, Banner, '003.jpg');
+      }
+      .Item009 {
+        @include BGPhoto(center, cover, Banner, '002.jpg');
+      }
+      .Item010 {
+        @include BGPhoto(center, cover, Banner, '008.jpg');
+      }
+    }
+  }
+
+  .script3{
+    background-color: white;
+    padding: 20px;
+  }
+  .Banner3 {
+    width: $W10 * 10;
+    overflow: hidden;
+    position: relative;
+    $ImgPadding: 350px;
+    $Differ: 5px;
+    .btnmore{
+      box-shadow: 0px 0px 5px 0px;
+      margin-bottom: 20px;
+      display: flex;
+      @include liDN;
+      .blank1{
+        flex: 1;
+        background-color: white;
+      }
+      .more{
+        flex: 8;
+        line-height: 60px;
+        background-color: white;
+        text-align: center;
+        border: 1px black solid;
+      }
+      .blank2{    
+        flex: 1;  
+        background-color: white;
+      }
+    }
+    .Btn {
+      color: white;
+      width: 25px * 2;
+      text-align: center;
+      line-height: 25px * 2;
+      font-size: $Trem * 1.2;
+      position: absolute;
+      z-index: 5;
+      top: ($ImgPadding - $Differ)/2-25;
+      background-color: rgba(255, 255, 255, 0.5);
+      @include Rounded(50);
+    }
+    .LeftBtn {
+      left: 2.5vw;
+    }
+    .RightBtn {
+      right: 2.5vw;
+    }
+    #ImgBox2 {
+      width: $W10 * 10;
+      @include liDN;
+      padding-bottom: $ImgPadding;
+      background-color: rgb(217, 143, 252);
+      li {
+        width: $W10 * 10;
+        float: left;
+        position: absolute;
+        font-size: 72px;
+        text-align: center;
+        padding-bottom: $ImgPadding - $Differ;
+      }
+      .Item011 {
+        @include BGPhoto(center, cover, Banner, '005.jpg');
+      }
+      .Item012 {
+        @include BGPhoto(center, cover, Banner, '004.jpg');
+      }
+      .Item013 {
+        @include BGPhoto(center, cover, Banner, '003.jpg');
+      }
+      .Item014 {
+        @include BGPhoto(center, cover, Banner, '002.jpg');
+      }
+      .Item015 {
+        @include BGPhoto(center, cover, Banner, '009.jpg');
+      }
+    }
+  } 
+  .script4{
+    background-color: white;
+    padding: 20px;
+  }
+  .Banner4 {
+    width: $W10 * 10;
+    overflow: hidden;
+    position: relative;
+    $ImgPadding: 350px;
+    $Differ: 5px;
+    .btnmore{
+      box-shadow: 0px 0px 5px 0px;
+      margin-bottom: 20px;
+      display: flex;
+      @include liDN;
+      .blank1{
+        flex: 1;
+        background-color: white;
+      }
+      .more{
+        flex: 8;
+        line-height: 60px;
+        background-color: white;
+        text-align: center;
+        border: 1px black solid;
+      }
+      .blank2{    
+        flex: 1;  
+        background-color: white;
+      }
+    }
+    .Btn {
+      color: white;
+      width: 25px * 2;
+      text-align: center;
+      line-height: 25px * 2;
+      font-size: $Trem * 1.2;
+      position: absolute;
+      z-index: 5;
+      top: ($ImgPadding - $Differ)/2-25;
+      background-color: rgba(255, 255, 255, 0.5);
+      @include Rounded(50);
+    }
+    .LeftBtn {
+      left: 2.5vw;
+    }
+    .RightBtn {
+      right: 2.5vw;
+    }
+    #ImgBox2 {
+      width: $W10 * 10;
+      @include liDN;
+      padding-bottom: $ImgPadding;
+      background-color: rgb(217, 143, 252);
+      li {
+        width: $W10 * 10;
+        float: left;
+        position: absolute;
+        font-size: 72px;
+        text-align: center;
+        padding-bottom: $ImgPadding - $Differ;
+      }
+      .Item016 {
+        @include BGPhoto(center, cover, Banner, '005.jpg');
+      }
+      .Item017 {
+        @include BGPhoto(center, cover, Banner, '004.jpg');
+      }
+      .Item018 {
+        @include BGPhoto(center, cover, Banner, '003.jpg');
+      }
+      .Item019 {
+        @include BGPhoto(center, cover, Banner, '002.jpg');
+      }
+      .Item020 {
+        @include BGPhoto(center, cover, Banner, '010.jpg');
+      }
+    }
+  }    
 }
