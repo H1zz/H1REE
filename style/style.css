@@ -116,38 +116,46 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     width: 80vw;
   }
 
+  article {
+    background-color: #e4e4e4;
+  }
   article #FourSort {
     display: none;
   }
   article #MFourSort {
     display: block;
-    background-color: grey;
-    line-height: 15vw;
+    margin-top: 20px;
+    background-color: white;
+    line-height: 20vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   article #MSixSort {
     display: block;
-    background-color: hotpink;
+    margin-top: 20px;
+    background-color: white;
   }
   article #MSixSort #one {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    line-height: 15vw;
+    line-height: 20vw;
   }
   article #MSixSort #two {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    line-height: 15vw;
+    line-height: 20vw;
   }
   article #MSixSort #three {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    line-height: 15vw;
+    line-height: 20vw;
+  }
+  article section {
+    margin-top: 20px;
   }
 
   footer .Blank {
@@ -168,7 +176,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     font-size: 1.2rem;
     position: absolute;
     z-index: 5;
-    top: 247.5px;
+    top: 222.5px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50px;
   }
@@ -181,7 +189,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 550px;
+    padding-bottom: 500px;
     background-color: #d98ffc;
   }
   #Main #Banner #ImgBox li {
@@ -190,7 +198,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 545px;
+    padding-bottom: 495px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -226,6 +234,55 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-position: center;
     background-size: cover;
     background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Sort {
+    padding-top: 15px;
+  }
+  #Main > .AllItems {
+    background-color: yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  #Main > .AllItems > .Item {
+    background-color: white;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  #Main > .AllItems > .Item > .script1 {
+    padding: 5px 0px 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main > .AllItems > .Item > .script1 > #sort1 {
+    -webkit-box-flex: 7;
+        -ms-flex: 7;
+            flex: 7;
+  }
+  #Main > .AllItems > .Item > .script1 > #size1 {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  #Main > .AllItems > .Item > .script2 {
+    padding-left: 10px;
+    list-style-type: none;
+  }
+  #Main > .AllItems > .Item > .script2 > li {
+    padding: 5px 0px 5px 0px;
+  }
+  #Main > .AllItems > .Item > .script2 #name {
+    font-weight: bolder;
+  }
+  #Main > .AllItems > .Item > .script2 #sales {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: red;
   }
 }
 @media screen and (min-width: 576px) {

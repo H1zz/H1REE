@@ -1,6 +1,7 @@
 // 呼叫 html 標籤，例如: nav ，稱作 類型選擇
 // 呼叫 id ，例如<li id="test"></li>，id="test"，「#」ID選擇器；「#test」
 // 呼叫 class，class="test1"，「.」類別選擇器；「.test1」
+// 後代選擇器，例如 header nav li ，nav框架中若存在 li 標籤，不論是哪一個層級，都會直接受影響
 // scss 1.巢狀寫法 2.變數 $name
 
 header {
@@ -81,31 +82,37 @@ header {
   }
 }
 article {
+  background-color: rgb(228, 228, 228);
   #FourSort {
     @include DN;
   }
   #MFourSort {
     @include DB;
-    background-color: grey;
-    line-height: $W10 * 1.5;
+    margin-top: 20px;
+    background-color:white;
+    line-height: $W10 * 2;
     // height: $W10 * 1.5;
     display: flex;
   }
   #MSixSort {
     @include DB;
-    background-color: hotpink;
+    margin-top: 20px;
+    background-color: white;
     #one {
       display: flex;
-      line-height: $W10 * 1.5;
+      line-height: $W10 * 2;
     }
     #two {
       display: flex;
-      line-height: $W10 * 1.5;
+      line-height: $W10 * 2;
     }
     #three {
       display: flex;
-      line-height: $W10 * 1.5;
+      line-height: $W10 * 2;
     }
+  }
+  section{
+    margin-top: 20px;
   }
 }
 footer {

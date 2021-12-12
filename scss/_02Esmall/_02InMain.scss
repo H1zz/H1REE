@@ -7,7 +7,7 @@
     // 定位點:相對定位
     position: relative;
 
-    $ImgPadding: 550px;
+    $ImgPadding: 500px;
     // 父框架的padding 355px - 子框架的padding 350px = 相差值 $Differ
     $Differ: 5px;
     .Btn {
@@ -79,6 +79,46 @@
       }
       .Item05 {
         @include BGPhoto(center, cover, Banner, '005.jpg');
+      }
+    }
+  }
+  .Sort{
+    padding-top: 15px;
+  }
+  >.AllItems{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    >.Item{
+      background-color: white;
+      width: 50%;
+      padding-bottom: 20px;
+      >.script1{        
+        padding: 5px 0px 5px 10px;
+        display: flex;
+        @include liDN;
+        >#sort1{
+          flex: 7;
+        }
+        >#size1{
+          flex: 3;
+        }               
+      }
+      >.script2{
+        padding-left: 10px;
+        @include liDN;
+        >li{
+          padding: 5px 0px 5px 0px;
+        }
+        #name{
+          font-weight: bolder;
+        }
+        #sales{
+          font-size: $Trem*1.5;
+          font-weight: bolder;
+          color: red;
+        }
       }
     }
   }
